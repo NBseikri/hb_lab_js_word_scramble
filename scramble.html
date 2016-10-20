@@ -23,8 +23,10 @@
             alert('The scrambled word is: ' + scrambledWord)
 
             guess = prompt('Guess what word this is: ' + scrambledWord);
+
+            guess = guess.trim();
   
-            if (guess === random) {
+            if (guess.toLowerCase() === random) {
                 alert('Well done, you guessed correctly!');
             } else {
                 alert('So sorry! Your guess was incorrect. The word was ' + scrambledWord);
